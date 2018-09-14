@@ -4,5 +4,5 @@ tmp/
 vendor
 terraform-provider-minimum*
 .terraform/
-terraform.tfstate
+terraform.tfstate*
 *.json
