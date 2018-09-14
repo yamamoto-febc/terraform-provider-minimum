@@ -1,0 +1,8 @@
+bin/
+.env
+tmp/
+vendor
+terraform-provider-minimum*
+.terraform/
+terraform.tfstate
+*.json

@@ -8,6 +8,9 @@ import (
 // Provider returns a terraform.ResourceProvider.
 func Provider() terraform.ResourceProvider {
 	return &schema.Provider{
-		ResourcesMap: map[string]*schema.Resource{},
+		Schema: map[string]*schema.Schema{},
+		ResourcesMap: map[string]*schema.Resource{
+			"minimum_basic": resourceMinimumBasic(),
+		},
 	}
 }
