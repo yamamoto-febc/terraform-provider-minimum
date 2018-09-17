@@ -10,6 +10,7 @@ func Provider() terraform.ResourceProvider {
 	return &schema.Provider{
 		Schema: map[string]*schema.Schema{},
 		ResourcesMap: map[string]*schema.Resource{
+			"minimum_inout": resourceMinimumInOut(),
 		},
 	}
 }
